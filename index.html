@@ -1,0 +1,155 @@
+<!-- ===================== index.html (Home Page) ===================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oneil Web Solutions | Home</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/index.css">
+  <script src="https://kit.fontawesome.com/c22f206330.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="IMG/OWS-logo.png" alt="Oneil's Web Solutions Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <div class="hero-content">
+      <h1>CRAFTING MODERN WEBSITES THAT DRIVE RESULTS</h1>
+      <h2>Professional Web Development Solutions <br> Tailored For Your Business Growth.</h2>
+      <a href="projects.html" class="btn">VIEW MY WORK</a>
+
+      <!-- Rotating Quotes -->
+      <p id="quote" class="quote"></p>
+    </div>
+
+    <p id="quote" class="quote"></p>
+
+    <style>
+      .quote {
+        margin-top: 40px;
+        font-style: italic;
+        font-family: Roboto, sans-serif;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.7);
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      .quote.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+
+    <script>
+      const quotes = [
+        `"Simplicity Is The Ultimate Sophistication." - Leonardo da Vinci`,
+        `"Design Is Not Just What It Looks Like, But How It Works." - Steve Jobs`,
+        `"Code Is Like Humor. When You Have To Explain It, It's Bad." - Cory House`,
+        `"First, Solve The Problem. Then, Write The Code." - John Johnson`
+      ];
+
+      let index = 0;
+      const quoteElement = document.getElementById("quote");
+
+      function changeQuote() {
+        quoteElement.classList.remove("show");
+
+        setTimeout(() => {
+          quoteElement.textContent = quotes[index];
+          quoteElement.classList.add("show");
+          index = (index + 1) % quotes.length;
+        }, 400);
+      }
+
+      changeQuote();
+      setInterval(changeQuote, 5000);
+    </script>
+
+  </main>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>WHAT I OFFER</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Custom Websites</h3>
+        <p>Responsive, Modern, And Tailored To Your Business Needs.</p>
+      </div>
+      <div class="service-card">
+        <h3>Portfolio Showcases</h3>
+        <p>Highlight Your Brand Or Personal Projects In Style.</p>
+      </div>
+      <div class="service-card">
+        <h3>Business Landing Pages</h3>
+        <p>Beautiful Landing Pages Designed To Convert Visitors Into Clients.</p>
+      </div>
+    </div>
+    <a href="contact.html" class="consulationbtn">BOOK A CONSULTATION</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3 class="tagline">“From Clicks To Clients — Your Success Online.”</h3>
+    <p class="footer-description">Book A Consultation To Start Your Business' Online Journey Or <br>
+      To Find Out What The Requirements Would Be To Start Building.</p>
+    <div class="footer-content">
+      <!-- Left side -->
+      <div class="footer-left">
+        <div class="socials">
+          <a href="https://www.twitter.com/official_O_W_S" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="https://www.instagram.com/offi.cial_o_w_s/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/oneil-marshall-4bb330380/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+      </div>
+
+      <!-- Right side -->
+      <div class="footer-right">
+        <div class="footer-sitemap">
+          <!--Site Map-->
+          <h3>SITEMAP</h3>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <!--Legal Section-->
+          <h3>LEGAL</h3>
+          <ul>
+            <li><a href="privacy-policy.html" target="_blank" rel="noopener noreferrer">PRIVACY POLICY</a></li>
+            <li><a href="terms-of-service.html" target="_blank" rel="noopener noreferrer">TERMS OF SERVICE</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Oneil Web Solutions. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
