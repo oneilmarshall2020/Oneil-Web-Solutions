@@ -97,7 +97,7 @@ main {
   padding: 40px 15px;
   text-align: center;
   background-color: var(--site-color);
-  background-image: url(/IMG/dolphins.jpg);
+  background-image: url(../IMG/dolphins.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -147,7 +147,7 @@ main {
   padding: 40px 15px;
   text-align: center;
   background-color: var(--site-color);
-  background-image: url(/IMG/globe.jpg);
+  background-image: url(../IMG/globe.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -181,7 +181,7 @@ main {
   padding: 40px 15px;
   text-align: center;
   background-color: var(--site-color);
-  background-image: url(/IMG/marvel.jpg);
+  background-image: url(../IMG/marvel.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -215,7 +215,7 @@ main {
   padding: 40px 15px;
   text-align: center;
   background-color: var(--site-color);
-  background-image: url(/IMG/volunteer.jpg);
+  background-image: url(../IMG/volunteer.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
