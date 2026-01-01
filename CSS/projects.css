@@ -1,0 +1,241 @@
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--site-color-hover);
+  padding-top: 60px; 
+  background-image: url(../IMG/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Hero Section*/
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.hero-content-image {
+  background-color: #e1dfe1; 
+  padding: 15px;     
+  border-radius: 20px;  
+  display: inline-block; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero-content-image img {
+  width: 500px;             
+  height: auto;  
+  border-radius: 12px;
+  display: block;
+}
+
+.hero-content-title {
+  color: #e1dfe1;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+.projects {
+  background-color: var(--site-color-hover);
+  height: 1000px;
+  margin: 0 0 30px 0;
+}
+
+.projects .subheading-title {
+  padding: 100px 0;
+}
+
+.heading {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 45px;
+}
+
+.subheading {
+  background-color: var(--site-color);
+  width: 50%;
+  border-radius: 20px;
+  margin: 20px auto;
+}
+
+.subheading h3 {
+  text-align: center;
+  font-size: 30px;
+  font-family: Roboto-light, sans-serif;
+  padding: 10px 0;
+}
+
+.projects .subheading a {
+  transition: color 0.3s ease;
+}
+
+.projects .subheading a:hover {
+  color: var(--site-color-hover);
+}
+
+.subheading-title {
+  text-align: center;
+  padding: 150px 0 50px 0;
+}
+
+.dolphin-details {
+  width: 75%;
+  margin: 0 auto;
+  height: 550px;
+  border-radius: 20px;
+  border: solid 3px white;
+  padding: 40px 15px;
+  text-align: center;
+  background-color: var(--site-color);
+  background-image: url(/IMG/dolphins.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 5px rgb(41, 195, 229);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dolphin-details:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.dolphin-details h3 {
+  font-size: 25px;
+  color: var(--site-color-hover)
+}
+
+.dolphin-details p {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  margin: 20px 0 150px 0;
+  color: #fff;
+}
+
+.view-project {
+  background-color: var(--site-color);
+  padding: 10px 15px;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  transition: all ease-in-out 200ms;
+}
+
+.view-project:hover {
+  background-color: var(--site-color-hover);
+  color: #fff;
+  cursor: pointer;
+  transform: translateY(-3px) scale(1.03);
+}
+
+.world-search-details {
+  width: 75%;
+  margin: 0 auto;
+  height: 550px;
+  border-radius: 20px;
+  border: solid 3px white;
+  padding: 40px 15px;
+  text-align: center;
+  background-color: var(--site-color);
+  background-image: url(/IMG/globe.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 5px rgb(41, 195, 229);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.world-search-details:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.world-search-details h3 {
+  font-size: 25px;
+  color: var(--site-color-hover)
+}
+
+.world-search-details p {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  margin: 20px 0 210px 0;
+  color: #fff;
+}
+
+.superhero-search-details {
+  width: 75%;
+  margin: 0 auto;
+  height: 550px;
+  border-radius: 20px;
+  border: solid 3px white;
+  padding: 40px 15px;
+  text-align: center;
+  background-color: var(--site-color);
+  background-image: url(/IMG/marvel.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 5px rgb(41, 195, 229);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.superhero-search-details:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.superhero-search-details h3 {
+  font-size: 25px;
+  color: var(--site-color-hover)
+}
+
+.superhero-search-details p {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  margin: 20px 0 240px 0;
+  color: #fff;
+}
+
+.volunteer-system-details {
+  width: 75%;
+  margin: 0 auto;
+  height: 550px;
+  border-radius: 20px;
+  border: solid 3px white;
+  padding: 40px 15px;
+  text-align: center;
+  background-color: var(--site-color);
+  background-image: url(/IMG/volunteer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 5px rgb(41, 195, 229);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.volunteer-system-details:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.volunteer-system-details h3 {
+  font-size: 25px;
+  color: var(--site-color-hover)
+}
+
+.volunteer-system-details p {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  margin: 20px 0 240px 0;
+  color: #fff;
+}

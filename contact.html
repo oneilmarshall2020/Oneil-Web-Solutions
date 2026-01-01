@@ -7,6 +7,7 @@
   <title>Oneil Web Solutions | Home</title>
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/contact.css">
   <script src="https://kit.fontawesome.com/c22f206330.js" crossorigin="anonymous"></script>
 </head>
 
@@ -29,8 +30,52 @@
 
   <!-- Hero Section -->
   <main>
+    <div class="hero-content">
+      <div class="hero-content-title">
+        <h1>
+          CONTACT
+        </h1>
+      </div>
+      <div class="hero-content-image">
+        <img src="/IMG/contact.jpg" alt="Hero Section Design Image">
+      </div>
+    </div>
   </main>
 
+  <section id="contact-section">
+    <div class="flex-form">
+      <div class="contact-container">
+        <h2>Get in Touch</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain" class="contact-form">
+            <div class="input-group">
+                <label class="labels" for="name">NAME</label>
+                <input class="inputs" type="text" id="name" name="Name" placeholder="John Doe" required>
+            </div>
+            <div class="input-group">
+                <label class="labels" for="phone">Phone Number</label>
+                <input class="inputs" type="tel" id="phone" name="Phone" placeholder="(555) 123-4567">
+            </div>
+            <div class="input-group">
+                <label class="labels" for="message">Message</label>
+                <textarea class="inputs" id="message" name="Message" rows="5" placeholder="Tell Me About Your Project..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Details</button>
+        </form>
+        <div class="divider">
+            <span>OR</span>
+        </div>
+        <a href="tel:+18764738824" class="cat-button">Call Me: 1 (876) 473-8824</a>
+      </div>
+
+      <div class="email-container">
+        <div class="contact-cta-wrapper">
+          <h3>Ready to work together?</h3>
+          <a href="mailto:your-email@example.com?subject=Project Inquiry" class="cta-button">Send Me an Email</a>
+        </div>
+      </div>
+    </div>
+    
+</section>
   <!-- Footer -->
   <footer>
     <h3 class="tagline">“From Clicks To Clients — Your Success Online.”</h3>
